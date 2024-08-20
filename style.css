@@ -58,8 +58,7 @@ a:hover{
 }
 
 #bloco-1{
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
     padding-top: 5%;
     padding-bottom: 9%;
     display: flex;
@@ -215,4 +214,13 @@ footer{
     #img-logo{
         width: 50%;
     }
+    #bloco-1{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 9%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 }
