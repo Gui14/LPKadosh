@@ -6,7 +6,7 @@
 @font-face {
     font-family: "Principal";
     src:
-      url("/Fonte/Arboria-Book.ttf")
+      url("./Fonte/Arboria-Book.ttf")
   }
 
 header{
