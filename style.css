@@ -6,7 +6,7 @@
 @font-face {
     font-family: "Principal";
     src:
-      url("/Fonte/Arboria-Book.ttf")
+      url("./Fonte/Arboria-Book.ttf")
   }
 
 header{
@@ -33,6 +33,7 @@ header{
 
 a{
     color: white;
+    text-decoration: none;
 }
 
 a:hover{
@@ -41,6 +42,7 @@ a:hover{
 
 .div-link:hover{
     background-color: white;
+    border-radius: 5px;
 }
 
 .div-link{
@@ -208,10 +210,34 @@ footer{
 
     #div-header-links{
         width: 70%;
-        font-size: 0.7rem;
+        font-size: 1rem;
+        gap: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    .div-link{
+        width: 50%;
     }
 
     #img-logo{
-        width: 50%;
+        width: 90%;
+    }
+
+    #bloco-1{
+        padding-left: 5%;
+        padding-top: 5%;
+        padding-right: 5%;
+        padding-bottom: 20%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    #bloco-2 img{
+        width: 80%;
     }
 }
