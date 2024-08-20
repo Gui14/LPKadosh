@@ -19,7 +19,7 @@ header{
 }
 
 #img-logo{
-    width: 25%;
+    width: 30%;
     margin-left: 2%;
 }
 
@@ -240,4 +240,13 @@ footer{
     #bloco-2 img{
         width: 80%;
     }
+    #bloco-1{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 9%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 }
