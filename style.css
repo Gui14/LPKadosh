@@ -237,9 +237,13 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-    .container{
+   .container{
         display: flex;
         flex-direction: column;
+    }
+
+    body{
+        background-image: none;
     }
 
     #div-logo{
@@ -248,13 +252,12 @@ footer{
 
     #div-header-links{
         width: 70%;
-        font-size: 1rem;
+        font-size: 0.7rem;
         gap: 5%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        border: 1px solid;
     }
 
     .div-link{
@@ -262,9 +265,14 @@ footer{
     }
 
     #img-logo{
-        width: 90%;
+        width: 100%;
     }
 
+    button{
+        font-size: 0.5rem;
+        height: 2vh;
+    }
+ /* 
     #bloco-1{
         padding-left: 5%;
         padding-top: 5%;
@@ -286,5 +294,5 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
+} */
 }
