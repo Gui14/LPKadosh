@@ -22,8 +22,8 @@
                 <a href=""><strong>Redes Sociais</strong></a>
             </div>
         </div>
-        <div class="div-btn-bloco1">
-            <a href="https://wa.me/557193033489"><button>CONVERSE CONOSCO</button></a>
+        <div id="div-botao" class="div-btn-bloco1">
+            <a href="https://wa.me/557193033489"><button id="meu-botao">CONVERSE CONOSCO</button></a>
         </div>
     </header>
     <div class="container">
@@ -72,5 +72,36 @@
             </div>
         </div>
     </footer> -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const divBotao = document.getElementById("div-botao");
+    const container = document.querySelector("#bloco-1");
+    const header = document.querySelector("header");
+
+    function moverBotao() {
+        if (window.innerWidth <= 768) {
+            // Move a div do botão para o container se estiver em um dispositivo móvel
+            if (!container.contains(divBotao)) {
+                container.appendChild(divBotao);
+                divBotao.style.display = "block"; // Exibe a div no container
+            }
+        } else {
+            // Retorna a div do botão para o header se a tela for maior
+            if (!header.contains(divBotao)) {
+                header.appendChild(divBotao);
+                divBotao.style.display = "flex"; // Exibe a div no header
+            }
+        }
+    }
+
+    // Executa ao carregar a página
+    moverBotao();
+
+    // Adiciona um listener para a mudança de tamanho da tela
+    window.addEventListener("resize", moverBotao);
+});
+
+    </script>
 </body>
 </html>
