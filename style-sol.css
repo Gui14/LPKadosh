@@ -7,12 +7,10 @@ html {
     overflow-y: scroll;
 }
 
-
 @font-face {
     font-family: "Principal";
-    src:
-    url("./Fonte/Kiro\ Light.otf")
-    }
+    src: url("./Fonte/Kiro\ Light.otf");
+}
 
 header{
     width: 100%;
@@ -26,7 +24,7 @@ header{
     width: 50%;
     margin-left: 2%;
 }
-    
+
 #div-logo{
     width: 20%;
 }
@@ -38,6 +36,7 @@ header{
     width: 50%;
     font-size: 1.3rem;
 }
+
 button{
     background-color: #0e77ab;
     border: 2px solid white;
@@ -83,9 +82,9 @@ a:hover{
     align-items: center;  
 }
 
-
 .link-atual{
-    width: 30%;
+    padding: 1%;
+    width: 22%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -128,17 +127,18 @@ a:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 2% ;
+    gap: 5%;
     padding-bottom: 3%;
+    flex-wrap: wrap; /* Garante que os itens fiquem bem organizados em linhas */
 }
 
 .img-oculos{
-    width: 65%;
+    width: 100%; /* Ajusta a largura da imagem para o tamanho do contêiner */
     border-radius: 15px;
 }
 
 .feed{
-    width: 20%;
+    width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,7 +146,8 @@ a:hover{
     border-radius: 10px;
     padding-top: 2%;
     padding-bottom: 2%;
-   
+    box-sizing: border-box; /* Garante que padding seja incluído na largura */
+    text-align: center;
 }
 
 .info{
@@ -207,18 +208,15 @@ br{
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo do modal */
-  }
-  
-  /* Imagem no Modal */
-  .modal-content {
+}
+
+.modal-content {
     margin: auto;
     display: block;
     width: 30%;
-    
-  }
-  
-  /* Botão para fechar o modal */
-  .close {
+}
+
+.close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -226,11 +224,11 @@ br{
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-  }
+}
