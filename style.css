@@ -253,7 +253,7 @@ footer{
 
     #div-header-links{
         width: 70%;
-        font-size: 13px;
+        font-size: 3vw;
         gap: 5%;
         display: flex;
         flex-direction: row;
