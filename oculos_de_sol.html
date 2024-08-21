@@ -15,32 +15,58 @@
             <div class="div-link">
                 <a href=""><strong>Óculos de grau</strong></a>
             </div>
-            <div class="link-atual">
-                <a href=""><strong>Óculos de sol</strong></a>
+            <div class="div-link">
+                <a href="oculos_de_sol.html"><strong>Óculos de sol</strong></a>
+            </div>
+            <div class="div-link">
+                <a href=""><strong>Redes Sociais</strong></a>
             </div>
         </div>
+        <div class="div-btn-bloco1">
+            <a href="https://wa.me/557193033489"><button>CONVERSE CONOSCO</button></a>
+        </div>
     </header>
+    <div id="modal" class="modal">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <img class="modal-content" id="imgExpandida">
+      </div>
     <div class="container">
         <div id="bloco-1">
             <div id="titulo">
                 <h2>FILTRO</h2>
             </div>
             <div class="filtros">
-                <select name="masculino" id="masculino">Masculino</select>
-                <select name="feminino" id="feminino">Feminino</select>
+                <div>
+                    <input type="checkbox" name="masculino" id="masculino">
+                    <label for="">Masculino</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="feminino" id="feminino">
+                    <label for="">Feminino</label>
+                </div>
             </div>
             <hr>
             <div class="filtros">
-                <select name="masculino" id="masculino">Masculino</select>
-                <select name="feminino" id="feminino">Feminino</select>
+                <div>
+                    <input type="checkbox" name="metal" id="metal">
+                    <label for="metal">Metal</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="redondo" id="redondo">
+                    <label for="redondo">Redondo</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="quadrado" id="quadrado">
+                <label for="quadrado">Quadrado</label>
+                </div> 
             </div>
         </div>
         <div id="bloco-2">
             <div class="linha-feed">
 
                 <!-- -------------------------------------- POST --------------------------------------- -->
-                <div class="feed">
-                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos">
+                <div class="feed masculino metal redondo">
+                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos" onclick="expandirImagem(this)">
                     <div class="info">
                         <div class="info-nome">
                             <p>Óculos Colcci</p>
@@ -51,12 +77,29 @@
                         <button class="btn">EU QUERO</button>
                     </div>
                 </div>
+                
                 <!-- -------------------------------------- FIM ---------------------------------------- -->
                  
 
                 <!-- -------------------------------------- POST --------------------------------------- -->
-                <div class="feed">
-                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos">
+                <div class="feed masculino metal quadrado">
+                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos" onclick="expandirImagem(this)">
+                    <div class="info">
+                        <div class="info-nome">
+                            <p>Óculos Colcci</p>
+                        </div>
+                        <div class="valor">
+                            <h2>R$ 200,00</h2>
+                        </div>
+                        <button class="btn">EU QUERO</button>
+                    </div>
+                </div>
+                <!-- -------------------------------------- FIM ---------------------------------------- -->
+
+
+                <!-- -------------------------------------- POST --------------------------------------- -->
+                <div class="feed feminino metal redondo">
+                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos" onclick="expandirImagem(this)">
                     <div class="info">
                         <div class="info-nome">
                             <p>Óculos Colcci</p>
@@ -72,23 +115,7 @@
 
                 <!-- -------------------------------------- POST --------------------------------------- -->
                 <div class="feed">
-                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos">
-                    <div class="info">
-                        <div class="info-nome">
-                            <p>Óculos Colcci</p>
-                        </div>
-                        <div class="valor">
-                            <h2>R$ 200,00</h2>
-                        </div>
-                        <button class="btn">EU QUERO</button>
-                    </div>
-                </div>
-                <!-- -------------------------------------- FIM ---------------------------------------- -->
-
-
-                <!-- -------------------------------------- POST --------------------------------------- -->
-                <div class="feed">
-                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos">
+                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos" onclick="expandirImagem(this)">
                     <div class="info">
                         <div class="info-nome">
                             <p>Óculos Colcci</p>
@@ -104,7 +131,7 @@
             <div class="linha-feed">
                 
                 <div class="feed">
-                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos">
+                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos" onclick="expandirImagem(this)">
                     <div class="info">
                         <div class="info-nome">
                             <p>Óculos Colcci</p>
@@ -120,7 +147,7 @@
 
                 <!-- -------------------------------------- POST --------------------------------------- -->
                 <div class="feed">
-                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos">
+                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos" onclick="expandirImagem(this)">
                     <div class="info">
                         <div class="info-nome">
                             <p>Óculos Colcci</p>
@@ -136,7 +163,7 @@
 
                 <!-- -------------------------------------- POST --------------------------------------- -->
                 <div class="feed">
-                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos">
+                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos" onclick="expandirImagem(this)">
                     <div class="info">
                         <div class="info-nome">
                             <p>Óculos Colcci</p>
@@ -152,7 +179,7 @@
 
                 <!-- -------------------------------------- POST --------------------------------------- -->
                 <div class="feed">
-                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos">
+                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos" onclick="expandirImagem(this)">
                     <div class="info">
                         <div class="info-nome">
                             <p>Óculos Colcci</p>
@@ -164,7 +191,76 @@
                     </div>
                 </div>
             </div>
+
+            <div class="linha-feed">
+
+                <!-- -------------------------------------- POST --------------------------------------- -->
+                <div class="feed">
+                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos" onclick="expandirImagem(this)">
+                    <div class="info">
+                        <div class="info-nome">
+                            <p>Óculos Colcci</p>
+                        </div>
+                        <div class="valor">
+                            <h2>R$ 200,00</h2>
+                        </div>
+                        <button class="btn">EU QUERO</button>
+                    </div>
+                </div>
+                <!-- -------------------------------------- FIM ---------------------------------------- -->
+                 
+
+                <!-- -------------------------------------- POST --------------------------------------- -->
+                <div class="feed">
+                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos" onclick="expandirImagem(this)">
+                    <div class="info">
+                        <div class="info-nome">
+                            <p>Óculos Colcci</p>
+                        </div>
+                        <div class="valor">
+                            <h2>R$ 200,00</h2>
+                        </div>
+                        <button class="btn">EU QUERO</button>
+                    </div>
+                </div>
+                <!-- -------------------------------------- FIM ---------------------------------------- -->
+
+
+                <!-- -------------------------------------- POST --------------------------------------- -->
+                <div class="feed">
+                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos" onclick="expandirImagem(this)">
+                    <div class="info">
+                        <div class="info-nome">
+                            <p>Óculos Colcci</p>
+                        </div>
+                        <div class="valor">
+                            <h2>R$ 200,00</h2>
+                        </div>
+                        <button class="btn">EU QUERO</button>
+                    </div>
+                </div>
+                <!-- -------------------------------------- FIM ---------------------------------------- -->
+
+
+                <!-- -------------------------------------- POST --------------------------------------- -->
+                <div class="feed">
+                    <img src="./Imagens/oculos1.jpg" alt="" class="img-oculos" onclick="expandirImagem(this)">
+                    <div class="info">
+                        <div class="info-nome">
+                            <p>Óculos Colcci</p>
+                        </div>
+                        <div class="valor">
+                            <h2>R$ 200,00</h2>
+                        </div>
+                        <button class="btn">EU QUERO</button>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
+    <script src="script-sol.js"></script>
 </body>
 </html>
