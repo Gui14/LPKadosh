@@ -246,6 +246,10 @@ footer{
         background-image: none;
     }
 
+    html{
+        position: relative;
+    }
+
     #div-logo{
         width: 30%;
     }
@@ -266,7 +270,7 @@ footer{
     }
 
     #img-logo{
-        width: 90%;
+        width: 80%;
     }
 
     .div-btn-bloco1{
