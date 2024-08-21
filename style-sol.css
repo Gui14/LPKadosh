@@ -179,9 +179,8 @@ a:hover{
 }
 
 .filtros{
-    width: 77%;
+    width: 100%;
     font-size: 1.3rem;
-    border-bottom: 1px solid rgb(194, 190, 190);
     padding-bottom: 10%;
     padding-top: 10%;
 }
@@ -189,7 +188,7 @@ a:hover{
 #titulo{
     width: 100%;
     display: flex;
-    justify-content: center;
+
     padding-bottom: 5%;
 }
 
@@ -231,4 +230,142 @@ br{
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    body{
+        background-image: none;
+    }
+
+    #div-logo{
+        width: 30%;
+    }
+
+    #div-header-links{
+        width: 70%;
+        font-size: 13px;
+        gap: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-right: 2%;
+    }
+
+    .link-atual{
+        width: 50%;
+    }
+
+    .div-link{
+        width: 50%;
+    }
+
+    #img-logo{
+        width: 80%;
+    }
+
+    .div-btn-bloco1{
+        display: none
+    }
+
+    #bloco-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        box-sizing: border-box;
+        padding: 5%;
+    }
+
+    #titulo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+
+    .filtros{
+        width: 100%;
+        font-size: 0.8rem;
+       
+        padding-left: 10%;
+    }
+
+    #div-filtros{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #bloco-2{
+        width: 100%;
+    }
+
+
+    .linha-feed{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 5%;
+        padding-bottom: 3%;
+        flex-wrap: wrap; /* Garante que os itens fiquem bem organizados em linhas */
+    }
+    
+    .img-oculos{
+        width: 100%; /* Ajusta a largura da imagem para o tamanho do contêiner */
+        border-radius: 15px;
+    }
+    
+    .feed{
+        width: 18%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        box-sizing: border-box; /* Garante que padding seja incluído na largura */
+        text-align: center;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .info-nome{
+        font-size: 0.8rem;
+    }
+    
+    .valor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 0.6rem;
+    }
+    
+    .btn{
+        width: 50%;
+        height: 5vh;
+        background-color:white;
+        color: #1ca3cb;
+        border-radius: 5px;
+        border: 1px solid #1ca3cb;
+        font-size: 0.3rem;
+    }
+    
 }
