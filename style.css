@@ -283,7 +283,8 @@ footer{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 5%;
+        padding: 0;
+        margin: 5%;
     }
 
     h1{
@@ -291,7 +292,7 @@ footer{
     }
 
     h2{
-        padding-bottom: 5%
+        display:none ;
     }
 
      /* 
