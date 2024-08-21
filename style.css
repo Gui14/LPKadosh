@@ -113,6 +113,7 @@ a:hover{
 
 #bloco-2 img{
     width: 70%;
+    max-height: 100vh;
     border-radius: 15px;
 }
 
