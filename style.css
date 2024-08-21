@@ -246,17 +246,13 @@ footer{
         background-image: none;
     }
 
-    html{
-        position: relative;
-    }
-
     #div-logo{
         width: 30%;
     }
 
     #div-header-links{
         width: 70%;
-        font-size: 14px;
+        font-size: 13px;
         gap: 5%;
         display: flex;
         flex-direction: row;
